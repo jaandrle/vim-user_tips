@@ -11,7 +11,7 @@ support:
 
     mkdir -p ~/.vim/bundle/vim-user_tips
     cd ~/.vim/bundle/vim-user_tips
-    git clone https://github.com/jaandrle/vim-user_tips.git
+    git clone -b main --single-branch https://github.com/jaandrle/vim-user_tips.git --depth 1
 
 In `.vimrc`:
 
