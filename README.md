@@ -23,6 +23,8 @@ You can show it in statusline (e. g. mine, the relevant part is `%2*»·%{user_t
     nnoremap <f5> :call user_tips#edit()<cr>
 ```
 
+Default tips are in [./user_tips.vim](./user_tips.vim), for inspiration see [user_tips.vim](https://github.com/jaandrle/dotfiles/blob/master/vim/.vim/user_tips.vim).
+
 ## Installation
 
 Install using your favorite package manager, or use Vim's built-in package
