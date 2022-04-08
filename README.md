@@ -5,7 +5,7 @@ This plugin provide two public functions
 - `user_tips#edit()`: opens file for modifying your tips
 
 ## Usage
-You can show it in statusline (e. g. mine):
+    You can show it in statusline (e. g. mine, the relevant part is `%2*»·%{user_tips#current()}%*`):
 
 ```vim
     execute 'hi! User2 ctermbg='.synIDattr(synIDtrans(hlID('StatusLine')), 'bg').' ctermfg=grey'
@@ -16,6 +16,12 @@ You can show it in statusline (e. g. mine):
 … leads to:
 
 ![](./Screenshot_20220408_101121.png)
+
+… for editing use for example:
+
+```vim
+    nnoremap <f5> :call user_tips#edit()<cr>
+```
 
 ## Installation
 
@@ -29,7 +35,3 @@ support:
 In `.vimrc`:
 
     set runtimepath^=~/.vim/bundle/*
-
-## TODO
-- [ ] better README
-- [ ] tbd
