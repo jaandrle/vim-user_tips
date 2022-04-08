@@ -5,7 +5,7 @@ This plugin provide two public functions
 - `user_tips#edit()`: opens file for modifying your tips
 
 ## Usage
-    You can show it in statusline (e. g. mine, the relevant part is `%2*»·%{user_tips#current()}%*`):
+You can show it in statusline (e. g. mine, the relevant part is `%2*»·%{user_tips#current()}%*`):
 
 ```vim
     execute 'hi! User2 ctermbg='.synIDattr(synIDtrans(hlID('StatusLine')), 'bg').' ctermfg=grey'
