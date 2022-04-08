@@ -4,6 +4,19 @@ This plugin provide two public functions
 - `user_tips#current()`: shows registered tip (random on `VimEnter`)
 - `user_tips#edit()`: opens file for modifying your tips
 
+## Usage
+You can show it in statusline (e. g. mine):
+
+```vim
+    execute 'hi! User2 ctermbg='.synIDattr(synIDtrans(hlID('StatusLine')), 'bg').' ctermfg=grey'
+    set laststatus=2                                                                     " Show status line on startup
+    set statusline+=··%1*≡·%{QuickFixStatus()}%*··%2*»·%{user_tips#current()}%*··%=
+    set statusline+=%<%f%R\%M··▶·%{&fileformat}·%{&fileencoding?&fileencoding:&encoding}·%{&filetype}··∷·%{mini_sessions#name('–')}·· 
+```
+… leads to:
+
+![](./Screenshot_20220408_101121.png)
+
 ## Installation
 
 Install using your favorite package manager, or use Vim's built-in package
